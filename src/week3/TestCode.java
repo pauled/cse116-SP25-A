@@ -15,6 +15,7 @@ public class TestCode {
         int result=CodeToTest.add(10,5);
         assertEquals(result,15);
         assertTrue(CodeToTest.add(7,7)==14);
+        assertEquals("expected "+4.5,4.5,4.500001,.001);
     }
     @Test
     public void testAddZero(){
