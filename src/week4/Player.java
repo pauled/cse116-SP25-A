@@ -14,6 +14,15 @@ public class Player {
     public int getHP(){
         return this.HP;
     }
+    public int getMaxHP(){
+        return this.maxHP;
+    }
+    public int getDamageDealt(){
+        return this.damageDealt;
+    }
+    public void setMaxHP(int maxHP){
+        this.maxHP=maxHP;
+    }
     public void takeDamage(int damage){
         this.HP-=damage;
     }
