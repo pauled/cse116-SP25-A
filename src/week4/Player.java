@@ -20,6 +20,9 @@ public class Player {
     public int getDamageDealt(){
         return this.damageDealt;
     }
+    public void setDamageDealt(int damage){
+        this.damageDealt=damage;
+    }
     public void setMaxHP(int maxHP){
         this.maxHP=maxHP;
     }
@@ -28,7 +31,7 @@ public class Player {
     }
     public String toString(){
         String out="Health: "+this.getHP()+"/";
-        out+=this.maxHP;
+        out+=this.maxHP+" damage dealt: "+this.damageDealt;
         return out;
     }
 
