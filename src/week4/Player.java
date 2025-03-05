@@ -1,12 +1,15 @@
 package week4;
 
-public class Player {
+import week7.GameItem;
+
+public class Player extends GameItem {
     private int maxHP;
     private int HP;
     private int damageDealt;
 
     //constructor
     public Player(int maxHP){
+        super(0,0);
         this.maxHP=maxHP;
         this.HP=maxHP;
         this.damageDealt=4;
