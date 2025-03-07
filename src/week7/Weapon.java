@@ -12,6 +12,9 @@ public class Weapon extends GameItem{
     public double getX(){
         return super.xLoc;
     }
+    public int getDamage(){
+        return this.damage;
+    }
 
     @Override
     public void use(Player player) {
