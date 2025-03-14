@@ -66,9 +66,10 @@ public class BST <A>{
         bst.insert(5);
         bst.insert(-10);
         bst.insert(4);
+        /*
         bst.insert(20);
         bst.insert(0);
-        bst.insert(2);
+        bst.insert(2);*/
 
         System.out.println(bst.root.inOrderTraversal(bst.root));
 
