@@ -1,6 +1,6 @@
 package week7;
 
-import week4.Player;
+import week10.Player;
 
 import java.util.HashMap;
 
@@ -15,5 +15,9 @@ public class HealthPotion extends GameItem{
     @Override
     public void use(Player player) {
         player.takeDamage(-this.increase);
+    }
+
+    public void drink(){
+        System.out.println("I feel healthy!");
     }
 }
