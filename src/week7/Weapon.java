@@ -1,8 +1,9 @@
 package week7;
 
 import week10.Player;
+import week10.Usable;
 
-public class Weapon extends GameItem{
+public class Weapon extends GameItem implements Usable {
     private int damage;
 
     public Weapon(double xloc,double yloc,int damage){
@@ -16,7 +17,7 @@ public class Weapon extends GameItem{
         return this.damage;
     }
 
-    @Override
+
     public void use(Player player) {
         player.setDamageDealt(this.damage);
     }

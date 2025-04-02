@@ -1,10 +1,11 @@
 package week7;
 
 import week10.Player;
+import week10.Usable;
 
 import java.util.HashMap;
 
-public class HealthPotion extends GameItem{
+public class HealthPotion extends GameItem  {
     private int increase;
 
     public HealthPotion(double xLoc,double yLoc, int increase){
@@ -12,7 +13,6 @@ public class HealthPotion extends GameItem{
         this.increase=increase;
     }
 
-    @Override
     public void use(Player player) {
         player.takeDamage(-this.increase);
     }

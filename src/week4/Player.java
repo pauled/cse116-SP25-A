@@ -1,7 +1,7 @@
 package week4;
 
 import week7.GameItem;
-
+/*
 public class Player extends GameItem {
     private int maxHP;
     private int HP;
@@ -14,6 +14,7 @@ public class Player extends GameItem {
         this.HP=maxHP;
         this.damageDealt=4;
     }
+    public void use(Player p){}
     public int getHP(){
         return this.HP;
     }
@@ -48,3 +49,4 @@ public class Player extends GameItem {
         System.out.println(p1);
     }
 }
+*/

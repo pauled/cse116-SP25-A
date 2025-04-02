@@ -1,8 +1,10 @@
 package week7;
 
 import week10.Player;
+import week10.Usable;
+import week10.Useless;
 
-public class GameItem {
+public abstract class GameItem implements Usable, Useless {
     protected double xLoc;
     protected double yLoc;
 
@@ -23,7 +25,7 @@ public class GameItem {
         return yLoc;
     }
 
-    public void use(Player player){}
+    //public abstract void use(Player player);
     public String toString(){
         String out="loc: ("+this.getxLoc()+","+this.getyLoc()+") ";
         return out;

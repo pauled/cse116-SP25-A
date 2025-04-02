@@ -10,7 +10,7 @@ public class Player extends GameItem {
     private int maxHP;
     private int HP;
     private int damageDealt;
-    private ArrayList<GameItem> inventory;
+    private ArrayList<Usable> inventory;
 
     //constructor
     public Player(int maxHP){
@@ -20,7 +20,7 @@ public class Player extends GameItem {
         this.damageDealt=4;
         this.inventory=new ArrayList<>();
     }
-    public void pickupItem(GameItem item){
+    public void pickupItem(Usable item){
         this.inventory.add(item);
     }
     public int getHP(){
@@ -40,6 +40,9 @@ public class Player extends GameItem {
     }
     public void takeDamage(int damage){
         this.HP-=damage;
+    }
+    public void use(Player p){
+        System.out.println("I am morally opposed to using a player");
     }
     public String toString(){
         String out="Health: "+this.getHP()+"/";
@@ -67,7 +70,7 @@ public class Player extends GameItem {
         //smallHealthPotion.drink();
         temp1.drink();
         GameItem akward=p2;
-        akward.use(p1);
+        //akward.use(p1);
         p1.pickupItem(largeHealth);
         p1.pickupItem(weapon);
     }
